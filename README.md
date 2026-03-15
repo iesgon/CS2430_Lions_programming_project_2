@@ -9,6 +9,6 @@
 This project is a data-driven experiment designed to measure the performance of four sorting algorithms: **Mergesort, Quicksort, Shaker Sort, and Heapsort**. We generate all possible permutations for a given $n$, count the exact number of element-to-element comparisons, and analyze the best, worst, and average cases.
 
 ## Team Roles (Rotated)
-*   **Implementation Lead:** Edgar Pena Arreola
+*   **Implementation Lead:** Iesus Gonzalez-Flores
 *   **Verification Lead:** Chris Salcedo Cardenas
-*   **Communications Lead:** Iesus Gonzalez-Flores
+*   **Communications Lead:** Edgar Pena Arreola
