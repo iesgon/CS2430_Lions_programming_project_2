@@ -11,6 +11,7 @@ The 'PermutationGenerator' is responsible for generating all $n!$ unique permuta
 3.  **Loop:** While 'hasNextPermutation(arr)' is TRUE:
 
    a. Find the largest index 'i' such that 'arr[i] < arr[i + 1]'.
+
    b. If no such 'i' exists, the sequence is in descending order; **Return all results**.
    c. Find the largest index 'j > i' such that 'arr[i] < arr[j]'.
    d. **Swap** 'arr[i]' and 'arr[j]'.
