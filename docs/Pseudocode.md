@@ -11,15 +11,10 @@ The 'PermutationGenerator' is responsible for generating all $n!$ unique permuta
 3.  **Loop:** While 'hasNextPermutation(arr)' is TRUE:
 
    a. Find the largest index 'i' such that 'arr[i] < arr[i + 1]'.
-   
    b. If no such 'i' exists, the sequence is in descending order; **Return all results**.
-   
    c. Find the largest index 'j > i' such that 'arr[i] < arr[j]'.
-   
    d. **Swap** 'arr[i]' and 'arr[j]'.
-   
    e. **Reverse** the suffix starting at 'arr[i + 1]' through the end of the array.
-   
    f. Add the new 'arr' state to the results list.
 
 ## 3. Supporting Logic (UML Methods)
