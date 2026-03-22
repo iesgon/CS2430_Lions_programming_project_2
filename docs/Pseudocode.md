@@ -10,7 +10,7 @@ The 'PermutationGenerator' is responsible for generating all $n!$ unique permuta
 2. **Collect First Case:** Add a copy of the initial sorted 'arr' to a list of results.
 3.  **Loop:** While 'hasNextPermutation(arr)' is TRUE:
    a. Find the largest index 'i' such that 'arr[i] < arr[i + 1]'.
-   b. If no such 'i' exists, the sequence is in descending order; **Return all results**.
+   b . If no such 'i' exists, the sequence is in descending order; **Return all results**.
    c. Find the largest index 'j > i' such that 'arr[i] < arr[j]'.
    d. **Swap** 'arr[i]' and 'arr[j]'.
    e. **Reverse** the suffix starting at 'arr[i + 1]' through the end of the array.
