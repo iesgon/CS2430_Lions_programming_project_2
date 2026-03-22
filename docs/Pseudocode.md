@@ -9,14 +9,12 @@ The 'PermutationGenerator' is responsible for generating all $n!$ unique permuta
 1. **Initialize:** Create an array 'arr' of size 'n' containing values '0' through 'n-1'.
 2. **Collect First Case:** Add a copy of the initial sorted 'arr' to a list of results.
 3.  **Loop:** While 'hasNextPermutation(arr)' is TRUE:
-
-   a. Find the largest index 'i' such that 'arr[i] < arr[i + 1]'.
-
-   b. If no such 'i' exists, the sequence is in descending order; **Return all results**.
-   c. Find the largest index 'j > i' such that 'arr[i] < arr[j]'.
-   d. **Swap** 'arr[i]' and 'arr[j]'.
-   e. **Reverse** the suffix starting at 'arr[i + 1]' through the end of the array.
-   f. Add the new 'arr' state to the results list.
+   - Find the largest index 'i' such that 'arr[i] < arr[i + 1]'.
+   - If no such 'i' exists, the sequence is in descending order; **Return all results**.
+   - Find the largest index 'j > i' such that 'arr[i] < arr[j]'.
+   - **Swap** 'arr[i]' and 'arr[j]'.
+   - **Reverse** the suffix starting at 'arr[i + 1]' through the end of the array.
+   - Add the new 'arr' state to the results list.
 
 ## 3. Supporting Logic (UML Methods)
 **Method: swap(arr, i, j)**
