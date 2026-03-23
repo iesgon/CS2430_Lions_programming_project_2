@@ -9,12 +9,12 @@
 | :--- | :--- | :--- |
 | **Iesus Gonzalez-Flores** | **Implementation Lead** | **Core Implementation:** Developed all 10 Java classes, including the `PermutationGenerator`, the `ExperimentDriver` architecture, and all four sorting algorithms (`MergeSort`, `QuickSort`, `ShakerSort`, `HeapSort`) with integrated comparison counters. |
 | **Edgar Pena Arreola** | **Communications Lead** | **Report & Assembly:** Responsible for the formal team report PDF, generating and formatting the best/worst 10 data tables for n=4, 6, 8, and ensuring all Section 8 questions were addressed in full paragraphs. |
-| **Chris Salcedo Cardenas** | **Verification Lead** | **Docs & Verification:** Developed the `README.md`, `docs/Verification.md`, the `docs/PermutationPseudocode.md` design artifact, and the `docs/Project Plan_ CS 2430 - Programming Project 2.pdf` . Created the repository structure and performed the final code audit to ensure comparison counts exclude loop bounds. |
+| **Chris Salcedo Cardenas** | **Verification Lead** | **Docs & Audit:** Developed the `README.md`, `docs/Verification.md`, the `docs/PermutationPseudocode.md` design artifact, and the `docs/Project Plan.pdf`. Established the verification criteria and performed the final code audit to ensure comparison counts strictly exclude loop bounds. |
 
 ## Team Evidence & Accountability
-- **Role Rotation:** Confirmed. Each team member is serving in a different role than held in Project 1 (March 22, 2026).
-- **Comparison Metric Audit:** Chris (Verification Lead) audited the 10 source files to ensure `comparisons++` only triggers on element-to-element checks (e.g., `arr[i] < arr[j]`) and excludes loop bounds (Section 6, Part 2).
-- **Design Artifacts:** The `/docs` folder contains the required Project Plan, the team's UML Diagram (Artifact #1), and the Permutation Pseudocode (Artifact #2) for the project checkpoint.
+- **Role Rotation:** Confirmed. Each team member is serving in a different role than held in Project 1 (as of March 22, 2026).
+- **Comparison Metric Audit:** Chris (Verification Lead) performed a manual audit of the 10 source files provided by the Implementation Lead to ensure `comparisons++` only triggers on element-to-element checks (e.g., `arr[i] < arr[j]`) and excludes loop bounds (Section 6, Part 2).
+- **Design Artifacts:** The `/docs` folder contains the required Project Plan, the team's UML Diagram (Artifact #1), and the Permutation Pseudocode (Artifact #2) created by the Verification Lead.
 - **Data Integrity:** Iesus (Implementation) utilized `Arrays.copyOf` and `.clone()` within the `ExperimentDriver` and `RunRecord` classes to ensure original input arrays were preserved for the "Best/Worst 10" report tables.
 
 ## Repository Layout
