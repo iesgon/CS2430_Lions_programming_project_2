@@ -9,7 +9,7 @@
 | :--- | :--- | :--- |
 | **Iesus Gonzalez-Flores** | **Implementation Lead** | **Core Implementation:** Developed all 10 Java classes, including the `PermutationGenerator`, the `ExperimentDriver` architecture, and all four sorting algorithms (`MergeSort`, `QuickSort`, `ShakerSort`, `HeapSort`) with integrated comparison counters. |
 | **Edgar Pena Arreola** | **Communications Lead** | **Report & Assembly:** Responsible for the formal team report PDF, generating and formatting the best/worst 10 data tables for n=4, 6, 8, and ensuring all Section 8 questions were addressed in full paragraphs. |
-| **Chris Salcedo Cardenas** | **Verification Lead** | **Docs & Verification:** Developed the `README.md`, `Verification.md`, and the `docs/PermutationPseudocode.md` design artifact. Created the repository structure and performed the final code audit to ensure comparison counts exclude loop bounds. |
+| **Chris Salcedo Cardenas** | **Verification Lead** | **Docs & Verification:** Developed the `README.md`, `docs/Verification.md`, and the `docs/PermutationPseudocode.md` design artifact. Created the repository structure and performed the final code audit to ensure comparison counts exclude loop bounds. |
 
 ## Team Evidence & Accountability
 - **Role Rotation:** Confirmed. Each team member is serving in a different role than held in Project 1 (March 22, 2026).
