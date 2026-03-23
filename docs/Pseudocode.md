@@ -16,5 +16,5 @@
 2. **Termination:** If no such index exists (array is reverse sorted), return FALSE.
 3. **Find Successor:** Find the largest index 'j' such that 'arr[j] > arr[i]'.
 4. **Swap:** Exchange values at 'arr[i]' and 'arr[j]'.
-5. **Reverse:** Reverse the suffix of the array starting from index `i + 1` to the end.
+5. **Reverse:** Reverse the suffix of the array starting from index 'i + 1' to the end.
 6. Return TRUE.
