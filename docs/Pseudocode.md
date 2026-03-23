@@ -1,31 +1,19 @@
 # Design Artifact: Permutation Generation Pseudocode
 **Project:** CS 2430 Project 2 - The Lions
+**Target Class:** 'PermutationGenerator.java'
 
-## 1. Overview
-The 'PermutationGenerator' is responsible for generating all $n!$ unique permutations of an integer array '[0, 1, ..., n-1]'. This ensures the 'ExperimentDriver' tests every possible case for $n=4, 6, 8$.
+**Function: generatePermutations(n)**
+1. Initialize an array 'arr' with values '\[0, 1, ..., n-1]'.
+2. Create an empty list 'permutations'.
+3. Add a **copy** of 'arr' to the list.
+4. While 'nextPermutation(arr)' returns TRUE:
+    a. Add a new **copy** of the modified 'arr' to the list.
+5. Return the list to the 'ExperimentDriver'.
 
-## 2. Main generic Logic
-**Function: generateAll (n)**
-1. **Initialize:** Create an array 'arr' of size 'n' containing values '0' through 'n-1'.
-2. **Collect First Case:** Add a copy of the initial sorted 'arr' to a list of results.
-3.  **Loop:** While 'hasNextPermutation(arr)' is TRUE:
-   - Find the largest index 'i' such that 'arr[i] < arr[i + 1]'.
-   - If no such 'i' exists, the sequence is in descending order; **Return all results**.
-   - Find the largest index 'j > i' such that 'arr[i] < arr[j]'.
-   - **Swap** 'arr[i]' and 'arr[j]'.
-   - **Reverse** the suffix starting at 'arr[i + 1]' through the end of the array.
-   - Add the new 'arr' state to the results list.
-
-## 3. Supporting Logic (UML Methods)
-**Method: swap(arr, i, j)**
-- Temporarily store 'arr[i]'.
-- Set 'arr[i] = arr[j]'.
-- Set 'arr[j] = temp'.
-
-**Method: reverse(arr, start, end)**
-- While 'start < end':
-  - 'swap(arr, start, end)'
-  - 'start++', 'end--'
- 
-## 4. Integration with Experiment Architecture
-As shown in the UML, the 'PermutationGenerator' passess these arrays to the 'ExperimentDriver'. The driver then iterates through the collection, passing each arrayinto the 'SortingAlgorithm.sort()' method to produce a 'SortResult'.
+**Function: nextPermutation(arr)**
+1. **Find Pivot:** Find the largest index 'i' such that 'arr[i] < arr[i + 1]'.
+2. **Termination:** If no such index exists (array is reverse sorted), return FALSE.
+3. **Find Successor:** Find the largest index 'j' such that 'arr[j] > arr[i]'.
+4. **Swap:** Exchange values at 'arr[i]' and 'arr[j]'.
+5. **Reverse:** Reverse the suffix of the array starting from index `i + 1` to the end.
+6. Return TRUE.
