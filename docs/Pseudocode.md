@@ -7,8 +7,9 @@
 2. Create an empty list 'permutations'.
 3. Add a **copy** of 'arr' to the list.
 4. While 'nextPermutation(arr)' returns TRUE:
-    a. Add a new **copy** of the modified 'arr' to the list.
-5. Return the list to the 'ExperimentDriver'.
+
+   a. Add a new **copy** of the modified 'arr' to the list.
+6. Return the list to the 'ExperimentDriver'.
 
 **Function: nextPermutation(arr)**
 1. **Find Pivot:** Find the largest index 'i' such that 'arr[i] < arr[i + 1]'.
